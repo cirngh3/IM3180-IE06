@@ -22,7 +22,7 @@ function fetchData() {
 
 // Function to render chart with data
 function renderChart(event) {
-    //event.preventDefault(); // Prevent the default link behavior
+    event.preventDefault(); // Prevent the default link behavior
     //mockdata, for testing only
     data = {
         labels: ['Positive', 'Negative', 'Neutral'],
