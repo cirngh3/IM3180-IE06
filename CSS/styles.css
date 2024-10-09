@@ -1,0 +1,191 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+    color: #333;
+}
+.logo img {
+    display: block;
+    width:90px; /* Adjust the size of the icon */
+    height: 90px;
+    margin-bottom: 5px; /* Space between the icon and text */
+}
+
+header {
+    background-color: #D9D9D9;
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+}
+nav ul li a {
+    display: flex;
+    flex-direction: column; /* Ensure the icon is above the text */
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+}
+nav ul li a img {
+    display: block;
+    width: 30px; /* Adjust the size of the icon */
+    height: 30px;
+    margin-bottom: 5px; /* Space between the icon and text */
+}
+
+nav ul li a span {
+    display: block;
+    font-size: 14px; /* Adjust font size as needed */
+    margin-bottom: 1px;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('../assets/images/cloud2.png'); /* Add your second background image */
+    
+    background-position: center; /* Position the first image centered and the second one at the bottom center */
+    background-repeat: no-repeat; /* Prevent repeating both images */
+    background-size: 100% auto; /* Adjust sizes: first image covers full width */
+    color: rgb(0, 0, 0);
+    background-color: #CED4E0;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#hero input {
+    width: 70%;
+    padding: 10px;
+    margin-top: 2px;
+}
+
+#hero button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Dashboard Section */
+#dashboard {
+    padding: 10px 20px;
+    background-color: #CED4E0;
+    text-align: center;
+    position: relative; /* Allows positioning of background */
+    min-height: 600px; /* Ensure the section has enough height */
+    background-image: url('../assets/images/grass.png'); /* Path to your background image */
+    background-position: bottom center; /* Position the image at the bottom */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: auto 10%; /* Set a fixed height for the image */
+    background-size: contain; /* Ensure the image is contained and scales proportionally */
+    padding: 20px; /* Optional padding */
+    
+}
+
+
+
+#dashboard .container {
+    margin: 0 auto;
+}
+
+/* Container styles */
+.container {
+    margin-top: 20px;
+}
+
+/* Flexbox for the box container */
+.box-container {
+    display: flex;
+    justify-content: space-evenly; /* Evenly distribute space between items */
+    gap: 20px; /* Space between the divs */
+    margin-top: 20px; /* Space between the heading and the divs */
+    width: 100%;
+    height:420px;
+    
+}
+
+/* All boxes share common styles */
+.box {
+    flex-grow: 1;
+    align-items: bottom;
+    justify-content: center;
+    background-color: transparent; /* Transparent background for image boxes */
+    
+}
+
+/* Specific styles for text boxes with white background */
+.white-box {
+    flex-grow: 2;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.box img {
+    max-width: 100%; /* Ensure images scale within their div */
+    max-height: 400px;
+    object-fit: contain;
+    margin-top: 250px;
+    
+}
+
+
+#chartContainer {
+    height: 400px;
+    margin-top: 20px;
+}
+/* About Section */
+/* About Section */
+#about {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    text-align: center; /* Center-align text */
+}
+
+#about .container {
+    max-width: 800px; /* Limit the width of the text */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
