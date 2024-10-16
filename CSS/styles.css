@@ -6,6 +6,24 @@ body {
     background-color: #f0f0f5;
     color: #333;
 }
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #717b93; /* You can change the background color */
+    z-index: 9999; /* Ensure it's on top of everything */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loadingScreen img {
+    width: 300px; /* Set image size for the loading screen */
+}
+
 .logo img {
     display: block;
     width:90px; /* Adjust the size of the icon */
@@ -14,7 +32,7 @@ body {
 }
 
 header {
-    background-color: #D9D9D9;
+    background-color: #f0f0f5;
     color: #333;
     text-align: center;
 }
@@ -22,9 +40,9 @@ header {
 nav {
     display: flex;
     align-items: flex-start;
-    height: 100px;
+    height: 50px;
     justify-content: space-between;
-    align-items: center;
+    align-items: center center;
     padding: 0 20px;
 }
 
@@ -66,12 +84,12 @@ nav ul li a span {
 /* Hero Section */
 #hero {
     background-image: url('../assets/images/cloud2.png'); /* Add your second background image */
-    
+    height:180px;
     background-position: center; /* Position the first image centered and the second one at the bottom center */
     background-repeat: no-repeat; /* Prevent repeating both images */
     background-size: 100% auto; /* Adjust sizes: first image covers full width */
     color: rgb(0, 0, 0);
-    background-color: #CED4E0;
+    background-color: #bbd7e3;
     padding: 20px;
     text-align: center;
 }
@@ -99,16 +117,15 @@ nav ul li a span {
 /* Dashboard Section */
 #dashboard {
     padding: 10px 20px;
-    background-color: #CED4E0;
+    /*background-color: #CED4E0;*/
     text-align: center;
     position: relative; /* Allows positioning of background */
     min-height: 600px; /* Ensure the section has enough height */
-    background-image: url('../assets/images/grass.png'); /* Path to your background image */
-    background-position: bottom center; /* Position the image at the bottom */
+    background-image: url('../assets/images/backgroundColour.png'); /* Path to your background image */
+    background-position: center center; /* Position the image at the bottom */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-size: auto 10%; /* Set a fixed height for the image */
-    background-size: contain; /* Ensure the image is contained and scales proportionally */
-    padding: 20px; /* Optional padding */
+    background-size: cover; /* Ensure the image is contained and scales proportionally */
+    
     
 }
 
@@ -164,20 +181,8 @@ nav ul li a span {
 
 #chartContainer {
     height: 400px;
+    width: 400px;
     margin-top: 20px;
-}
-/* About Section */
-/* About Section */
-#about {
-    padding: 10px 20px;
-    background-color: #f9f9f9;
-    text-align: center; /* Center-align text */
-}
-
-#about .container {
-    max-width: 800px; /* Limit the width of the text */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Add padding for better spacing */
 }
 
 

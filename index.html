@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+        <img src="assets/images/loadingScreen.png" alt="Loading...">
+    </div>
+
     <header>
         <nav>
             <div class="logo">
@@ -51,30 +56,26 @@
                 </div>
  
                 <div class="box white-box">
-                    <p>Text content for the first text box.</p>
+                    <p>Text content for the text box.</p>
                 </div>
 
-                <div class="box">
-                    <img src="assets/images/mousefront.png" alt="Mouse Front">
-                </div>
-    
-                 <div class="box white-box">
-                    <p>Text content for the second text box.</p>
-                </div>
+
  
                 <div class="box">
                     <img src="assets/images/mouseright.png" alt="Mouse Right">
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About This Project</h2>
-            <p>This project adresses and focuses on social issues across social media platforms</p>
+        <div id="about">
+            <div class="container">
+                <h2>About This Project</h2>
+                <p>This project adresses and focuses on social issues across social media platforms</p>
+            </div>
         </div>
     </section>
+
+    
 
     <footer>
         <div class="footer-content">
@@ -84,6 +85,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        // JavaScript to hide loading screen after 2 seconds
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('loadingScreen').style.display = 'none'; // Hide loading screen
+            }, 1000); // 1000 milliseconds = 2 seconds
+        };
+    </script>
 </body>
 </html>
 
